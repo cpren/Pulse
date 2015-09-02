@@ -184,6 +184,26 @@
                                     <field name="VAR">real_time</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="variables_set" id="103" inline="true">
+                                    <field name="VAR">bpm</field>
+                                    <value name="VALUE">
+                                      <block type="math_arithmetic" id="114" inline="true">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="115">
+                                            <field name="VAR">hits</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="116">
+                                            <field name="NUM">4</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
