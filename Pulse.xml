@@ -202,6 +202,29 @@
                                         </value>
                                       </block>
                                     </value>
+                                    <next>
+                                      <block type="oled_setcursor" id="119" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="120">
+                                            <field name="NUM">60</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="121">
+                                            <field name="NUM">40</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawnumber" id="117" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="variables_get" id="118">
+                                                <field name="VAR">bpm</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
